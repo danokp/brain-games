@@ -18,8 +18,10 @@ def main():
 
     question_num = 3
     while question_num > 0:
-        random_num_1 = random.randint(0, 50)
-        random_num_2 = random.randint(0, 50)
+        random_num_first = 0
+        random_num_last = 50
+        random_num_1 = random.randint(random_num_first, random_num_last)
+        random_num_2 = random.randint(random_num_first, random_num_last)
         operator = random.choice(['*', '+'])
         correct_answer = str(calc_answer(random_num_1, random_num_2, operator))
         question = f'{random_num_1} {operator} {random_num_2}'

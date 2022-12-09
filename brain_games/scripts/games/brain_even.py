@@ -15,7 +15,9 @@ def main():
 
     question_num = 3
     while question_num > 0:
-        random_num = random.randint(0, 1_000)
+        random_num_first = 0
+        random_num_last = 1_000
+        random_num = random.randint(random_num_first, random_num_last)
         correct_answer = is_even(random_num)
         question_num = play_game(name, random_num, correct_answer, question_num)
 

@@ -20,8 +20,10 @@ def main():
 
     question_num = 3
     while question_num > 0:
-        random_num_1 = random.randint(1, 100)
-        random_num_2 = random.randint(1, 100)
+        random_num_first = 0
+        random_num_last = 100
+        random_num_1 = random.randint(random_num_first, random_num_last)
+        random_num_2 = random.randint(random_num_first, random_num_last)
         correct_answer = str(calc_gcd(random_num_1, random_num_2))
         question = f'{random_num_1} {random_num_2}'
         question_num = play_game(name, question, correct_answer, question_num)
