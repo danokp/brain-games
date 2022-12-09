@@ -20,7 +20,7 @@ def main():
 
     question_num = 3
     while question_num > 0:
-        random_num_first = 0
+        random_num_first = 1
         random_num_last = 100
         random_num_1 = random.randint(random_num_first, random_num_last)
         random_num_2 = random.randint(random_num_first, random_num_last)
