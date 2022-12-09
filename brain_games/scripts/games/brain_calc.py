@@ -14,7 +14,7 @@ def calc_answer(num_1, num_2, operator):
 
 def main():
     name = welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('What is the result of the expression?')
 
     question_num = 3
     while question_num > 0:
