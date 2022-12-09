@@ -34,7 +34,7 @@ def gen_progression():
 
 def main():
     name = welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('What number is missing in the progression?')
 
     question_num = 3
     while question_num > 0:
