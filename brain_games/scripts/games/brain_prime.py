@@ -7,7 +7,7 @@ import random
 
 def is_prime(num):
     if num > 1:
-        count_div = 0
+        count_div = 1
         for i in range(1, int(num // 2 + 1)):
             if num % i == 0:
                 count_div += 1
