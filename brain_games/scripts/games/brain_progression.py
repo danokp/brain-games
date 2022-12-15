@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.scripts.brain_games_functions import (welcome_user,
-                                                       play_game,
-                                                       congratulate_winner)
+from brain_games.scripts.brain_games_functions import play_game
 import random
 
 
-def gen_progression():
+def give_question_and_answer_brain_progression():
     prog_diff_random_first = 1
     prog_diff_random_last = 10
     random_progression_diff = random.randint(prog_diff_random_first,
@@ -29,20 +27,12 @@ def gen_progression():
     question.extend(progression[:random_index])
     question.append('..')
     question.extend(progression[random_index + 1:])
-    return question, str(correct_answer)
+    return ' '.join(question), str(correct_answer)
 
 
 def main():
-    name = welcome_user()
-    print('What number is missing in the progression?')
-
-    question_num = 3
-    while question_num > 0:
-        question, correct_answer = gen_progression()
-        question_num = play_game(name, ' '.join(question),
-                                 correct_answer, question_num)
-
-    congratulate_winner(name, question_num)
+    task = 'What number is missing in the progression?'
+    play_game(give_question_and_answer_brain_progression, task)
 
 
 if __name__ == '__main__':
