@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/danokp/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/danokp/python-project-49/actions)
 <a href="https://codeclimate.com/github/danokp/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/3bfb7273713457a21fbf/maintainability" /></a>
 
-###Installation guide:
+### Installation guide:
 1. Create virtual environment:
 ```sh
     python3 -m venv <name of virtual environment>
