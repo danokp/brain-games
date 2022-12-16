@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from brain_games.scripts.brain_games_functions import play_game
+from brain_games.brain_games_engine import play_game
 import random
 
 
@@ -22,10 +22,6 @@ def give_question_and_answer_brain_gcd():
     return question, correct_answer
 
 
-def main():
+def play_brain_gcd():
     task = 'Find the greatest common divisor of given numbers.'
     play_game(give_question_and_answer_brain_gcd, task)
-
-
-if __name__ == '__main__':
-    main()

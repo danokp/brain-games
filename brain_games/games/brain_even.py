@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from brain_games.scripts.brain_games_functions import play_game
+from brain_games.brain_games_engine import play_game
 import random
 
 
@@ -15,10 +15,6 @@ def give_question_and_answer_brain_even():
     return random_num, correct_answer
 
 
-def main():
+def play_brain_even():
     task = 'Answer "yes" if the number is even, otherwise answer "no".'
     play_game(give_question_and_answer_brain_even, task)
-
-
-if __name__ == '__main__':
-    main()

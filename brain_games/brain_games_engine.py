@@ -2,6 +2,9 @@
 import prompt
 
 
+NUM_OF_SUBGAMES = 3
+
+
 def welcome_user():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -30,7 +33,7 @@ def congratulate_winner(name, question_num):
 def play_game(game_name, task):
     name = welcome_user()
     print(task)
-    question_num = 3
+    question_num = NUM_OF_SUBGAMES
     while question_num > 0:
         question, correct_answer = game_name()
         question_num = play_one_round(name,
