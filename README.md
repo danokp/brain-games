@@ -16,23 +16,34 @@ Installation guide
     python3 -m pip install brain_games
 ```
 4. Use one of the following commands to play the brain game you want:
+
 –       brain-even
+
 –       brain-calc
+
 –       brain-gcd
+
 –       brain-progression
+
 –       brain-prime
 
+
 brain-even
+
 [![asciicast](https://asciinema.org/a/SHHFRRHNWYgROO0tNk3jzef41.svg)](https://asciinema.org/a/SHHFRRHNWYgROO0tNk3jzef41)
 
 brain-calc
+
 [![asciicast](https://asciinema.org/a/KQhp04b97eA3OAx8GOBzRk8fl.svg)](https://asciinema.org/a/KQhp04b97eA3OAx8GOBzRk8fl)
 
 brain-gcd
+
 [![asciicast](https://asciinema.org/a/BBZWIuSDBvSqLD5jxxoYw0PLJ.svg)](https://asciinema.org/a/BBZWIuSDBvSqLD5jxxoYw0PLJ)
 
 brain-progression
+
 [![asciicast](https://asciinema.org/a/taOn2SjtVqad9xOi582mymvq3.svg)](https://asciinema.org/a/taOn2SjtVqad9xOi582mymvq3)
 
 brain-prime
+
 [![asciicast](https://asciinema.org/a/2XAHp5LMwTvPTFkSruvL4Lp4s.svg)](https://asciinema.org/a/2XAHp5LMwTvPTFkSruvL4Lp4s)
