@@ -2,6 +2,10 @@
 from brain_games.brain_games_engine import play_game
 import random
 
+RANDOM_NUM_FIRST = 0
+RANDOM_NUM_LAST = 50
+OPERATORS_RANGE = ['*', '+', '-']
+
 
 def calc_answer(num_1, num_2, operator):
     if operator == '+':
@@ -13,11 +17,9 @@ def calc_answer(num_1, num_2, operator):
 
 
 def give_question_and_answer_brain_calc():
-    random_num_first = 0
-    random_num_last = 50
-    random_num_1 = random.randint(random_num_first, random_num_last)
-    random_num_2 = random.randint(random_num_first, random_num_last)
-    operator = random.choice(['*', '+', '-'])
+    random_num_1 = random.randint(RANDOM_NUM_FIRST, RANDOM_NUM_LAST)
+    random_num_2 = random.randint(RANDOM_NUM_FIRST, RANDOM_NUM_LAST)
+    operator = random.choice(OPERATORS_RANGE)
     correct_answer = str(calc_answer(random_num_1, random_num_2, operator))
     question = f'{random_num_1} {operator} {random_num_2}'
     return question, correct_answer

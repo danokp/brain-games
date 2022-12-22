@@ -2,23 +2,24 @@
 from brain_games.brain_games_engine import play_game
 import random
 
+PROG_DIFF_RANDOM_FIRST = 1
+PROG_DIFF_RANDOM_LAST = 10
+PROG_START_RANDOM_FIRST = 0
+PROG_START_RANDOM_LAST = 100
+PROG_LEN_RANDOM_FIRST = 5
+PROG_LEN_RANDOM_LAST = 10
+PROG_INDEX_RANDOM_FIRST = 0
+
 
 def give_question_and_answer_brain_progression():
-    prog_diff_random_first = 1
-    prog_diff_random_last = 10
-    random_progression_diff = random.randint(prog_diff_random_first,
-                                             prog_diff_random_last)
-    prog_start_random_first = 0
-    prog_start_random_last = 100
-    random_progression_start = random.randint(prog_start_random_first,
-                                              prog_start_random_last)
-    prog_len_random_first = 5
-    prog_len_random_last = 10
-    random_progression_len = random.randint(prog_len_random_first,
-                                            prog_len_random_last)
-    prog_index_random_first = 0
+    random_progression_diff = random.randint(PROG_DIFF_RANDOM_FIRST,
+                                             PROG_DIFF_RANDOM_LAST)
+    random_progression_start = random.randint(PROG_START_RANDOM_FIRST,
+                                              PROG_START_RANDOM_LAST)
+    random_progression_len = random.randint(PROG_LEN_RANDOM_FIRST,
+                                            PROG_LEN_RANDOM_LAST)
     prog_index_random_last = random_progression_len - 1
-    random_index = random.randint(prog_index_random_first,
+    random_index = random.randint(PROG_INDEX_RANDOM_FIRST,
                                   prog_index_random_last)
     progression = [str(random_progression_start + i * random_progression_diff)
                    for i in range(random_progression_len)]
