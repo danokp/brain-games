@@ -3,15 +3,17 @@ from brain_games.brain_games_engine import play_game
 import random
 
 
+RANDOM_NUM_FIRST = 0
+RANDOM_NUM_LAST = 1_000
+
+
 def is_even(num):
-    return 'yes' if num % 2 == 0 else 'no'
+    return True if num % 2 == 0 else False
 
 
 def give_question_and_answer_brain_even():
-    random_num_first = 0
-    random_num_last = 1_000
-    random_num = random.randint(random_num_first, random_num_last)
-    correct_answer = is_even(random_num)
+    random_num = random.randint(RANDOM_NUM_FIRST, RANDOM_NUM_LAST)
+    correct_answer = 'yes' if is_even(random_num) else 'no'
     return random_num, correct_answer
 
 

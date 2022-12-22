@@ -3,6 +3,10 @@ from brain_games.brain_games_engine import play_game
 import random
 
 
+RANDOM_NUM_FIRST = 0
+RANDOM_NUM_LAST = 1_000
+
+
 def is_prime(num):
     if num > 1:
         count_div = 1
@@ -10,17 +14,15 @@ def is_prime(num):
             if num % i == 0:
                 count_div += 1
             if count_div > 2:
-                return 'no'
-        return 'yes'
+                return False
+        return True
     else:
-        return 'no'
+        return False
 
 
 def give_question_and_answer_brain_prime():
-    random_num_first = 0
-    random_num_last = 1_000
-    random_num = random.randint(random_num_first, random_num_last)
-    correct_answer = is_prime(random_num)
+    random_num = random.randint(RANDOM_NUM_FIRST, RANDOM_NUM_LAST)
+    correct_answer = 'yes' if is_prime(random_num) else 'no'
     return random_num, correct_answer
 
 
