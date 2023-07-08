@@ -1,21 +1,26 @@
-### Hexlet tests and linter status:
+# Brain games 
 [![Actions Status](https://github.com/danokp/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/danokp/python-project-49/actions)
 <a href="https://codeclimate.com/github/danokp/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/3bfb7273713457a21fbf/maintainability" /></a>
 
 ### Installation guide:
-1. Create virtual environment:
+1. Download project:
+```sh
+    git clone git@github.com:danokp/brain-games.git
+    cd brain-games
+```
+2. Create virtual environment:
 ```sh
     python3 -m venv <name of virtual environment>
 ```
-2. Activate virtual environment:
+3. Activate virtual environment:
 ```sh
     source ~/<name of virtual environment>/bin/activate
 ```
-3. Install brain_games package:
+4. Install brain_games package:
 ```sh
     python3 -m pip install brain_games
 ```
-4. Use one of the following commands to play the brain game you want:
+5. Use one of the following commands to play the brain game you want:
 
 	–  brain-even
 
